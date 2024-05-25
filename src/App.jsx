@@ -118,6 +118,7 @@ function App() {
                     {
 
                         setIsPlaying(false);
+                        setSequenceLength(sequenceLength + 1);
                     }
                 }
                 else
