@@ -1,0 +1,10 @@
+.boxContainer {
+    background-color: rgb(30, 30, 30);
+    overflow: hidden;
+    width: 75vw;
+    height: 50vh;
+    margin: 12vw;
+    margin: 0;
+    position: relative;
+    max-width: 400px;
+}
