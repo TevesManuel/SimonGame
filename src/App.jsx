@@ -157,7 +157,7 @@ function App() {
         }, 100);
 
         return () => clearInterval(interval_handler);
-    }, [colors, isPlaying, lastTurnedOff, sequence, sequenceLength]);
+    }, [colors, isPlaying, lastTurnedOff, nowSequence, sequence, sequenceLength]);
 
     return (
         <>
