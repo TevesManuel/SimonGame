@@ -174,7 +174,7 @@ function App() {
                     if(sequence.length === (sequenceLength) && allColorTurnedOff())
                     {
                         setIsPlaying(true);
-                        console.log('Final sequence', sequence);
+                        // console.log('Final sequence', sequence);
                     }
                     colorShutdown(SHUTDOWN_MS_NPLAYING);
                     // console.log(allColorTurnedOff());
@@ -218,6 +218,9 @@ function App() {
                 </h1>
             </header>
             <main>
+                <div style={{ width: '100vw', position: 'absolute', top: '10vh' }}>
+                    <h1 style={{ width: '100vw', textAlign: 'center', marginTop: '10px' }}>{isPlaying ? 'REPEAT' : 'SEE'}</h1>
+                </div>
                 <div className='divBoxContainer'>
                     <BoxContainer hasBeenInit={hasBeenInit} setHasBeenInit={setHasBeenInit}>
                         <Box state={colors.red.state}    color='red'      notifyFunc={notifyClick}/>
